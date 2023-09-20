@@ -1,0 +1,64 @@
+.navbar {
+  background-color: #00d73c;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navItems {
+}
+
+.regbtn {
+  background-color: white;
+  padding: 7px 13px;
+  color: #00d73c;
+  border-radius: 2px;
+  margin: 0 5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.logbtn {
+  padding: 7px 13px;
+  color: white;
+  border-radius: 2px;
+  margin: 0 5px;
+  font-weight: 600;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+  }
+
+  .regbtn {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .logbtn {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
