@@ -140,46 +140,47 @@
 }
 
 @media (max-width: 500px) {
+  .header {
+    background-color: white;
+  }
+
   .headerList {
     overflow-x: scroll;
     padding: 5px 5%;
     padding-bottom: 10px;
     gap: 40px;
-  }
-
-  .headerSearch {
-    border: none;
     background-color: #00d73c;
-    display: flex;
-    flex-direction: column;
-    bottom: -10%;
-    width: 100%;
-    padding: 10px 0;
   }
 
   .headerTitle {
-    font-size: 25px;
-  }
-
-  .headerContanier {
-    text-align: center;
+    padding: 0 10px;
+    color: black;
+    font-size: 20px;
   }
 
   .headerDescription {
     font-size: 10px;
-    padding: 0 40px;
+    padding: 0 10px;
+    color: black;
   }
 
   .headerbtn {
-    margin-top: 30px;
-    border: none;
-    padding: 7px;
-    color: #4caf50;
-    font-weight: 600;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: 15px;
+    display: none;
+  }
+
+  .headerSearch {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 0px;
+    position: unset;
+    margin: 21% auto;
     background-color: white;
+  }
+
+  .headerContanier {
+    /* text-align: center; */
+    margin: 0px 0px 100px 0px;
   }
 
   .headerIcon {
@@ -201,5 +202,65 @@
 
   .headerListItem span {
     font-size: 15px;
+  }
+
+  .headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 5px solid #00d73c;
+    border-bottom: 2.5px solid #00d73c;
+    width: 100%;
+    color: black;
+    padding: 5px;
+    position: relative;
+  }
+
+  .headerSearchItem:nth-child(4) {
+    border-bottom: 5px solid #00d73c;
+  }
+
+  .headerSearchInput {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+  }
+
+  .headerIcon {
+    color: black;
+  }
+
+  .date {
+    position: absolute;
+    left: -15px;
+    z-index: 88;
+    top: 35px;
+  }
+
+  .options {
+    width: 100%;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 88;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px black;
+    box-shadow: 0px 0px 10px -5px black;
+  }
+
+  .headerSerachBtn {
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    width: 100%;
   }
 }

@@ -61,4 +61,8 @@
     padding: 5px;
     font-size: 10px;
   }
+
+  .navItems {
+    padding-right: 10px;
+  }
 }
