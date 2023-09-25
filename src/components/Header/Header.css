@@ -12,11 +12,14 @@
   margin: 20px 0px 100px 0px;
 }
 
+.headerContanier.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
 .headerList {
   display: flex;
   gap: 40px;
   margin-bottom: 50px;
-  gap: 0;
 }
 
 .headerListItem {
@@ -104,9 +107,11 @@
 .date {
   position: absolute;
   top: 50px;
+  z-index: 2;
 }
 
 .options {
+  z-index: 2;
   position: absolute;
   top: 50px;
   background-color: white;
@@ -226,6 +231,7 @@
     padding: 10px;
     background-color: white;
     color: black;
+    width: 100%;
   }
 
   .headerIcon {
@@ -262,5 +268,14 @@
     font-weight: bold;
     outline: none;
     width: 100%;
+  }
+
+  .headerSearchText {
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .headerContanier.listMode {
+    margin: 0px 0px 0px 0px;
   }
 }
