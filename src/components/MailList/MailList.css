@@ -36,3 +36,22 @@
   border-radius: 5px;
   padding: 0 10px;
 }
+
+@media (max-width: 600px) {
+  .mailTitle {
+    color: white;
+    font-weight: 800;
+    font-size: 27px;
+  }
+
+  .mailInputContainer > input {
+    width: 210px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .mailInputContainer > button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

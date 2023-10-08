@@ -29,3 +29,13 @@
 .featuredTitle > h1 {
   font-size: 20px;
 }
+
+@media (max-width: 600px) {
+  .featuredItem {
+    margin: 0 4px;
+  }
+
+  .featuredTitle > h1 {
+    font-size: 14px;
+  }
+}

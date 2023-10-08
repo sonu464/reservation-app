@@ -28,3 +28,18 @@
   font-size: 14px;
   font-weight: 300;
 }
+
+@media (max-width: 600px) {
+  .pList {
+    gap: 15px;
+    overflow-x: scroll;
+    padding: 20px 0;
+  }
+
+  .pListItem {
+    flex: none;
+    overflow: hidden;
+    width: 150px;
+    margin: 0 10px;
+  }
+}

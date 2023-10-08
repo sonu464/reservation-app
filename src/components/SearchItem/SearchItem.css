@@ -111,3 +111,95 @@
 .siCheckButton:focus {
   outline: none;
 }
+
+@media (max-width: 500px) {
+  .searchItem {
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .siDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex: none;
+    width: 40%;
+  }
+
+  .siImg {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+  }
+
+  .siTitle {
+    font-size: 9px;
+    color: #00a703;
+  }
+
+  .siDistance {
+    font-size: 6px;
+  }
+  .siTaxiOp {
+    font-size: 7px;
+    background-color: yellow;
+    padding: 1px;
+  }
+
+  .siSubtitle {
+    font-size: 6px;
+    font-weight: bold;
+  }
+  .siFeatures {
+    font-size: 5px;
+  }
+  .siCancelOp {
+    font-size: 7px;
+    color: #00a703;
+    font-weight: bold;
+  }
+  .siCancelOpSubtitle {
+    color: #00a703;
+    font-size: 7px;
+  }
+
+  .siDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: none;
+  }
+
+  .siRating > span {
+    font-size: 7px;
+    font-weight: bold;
+  }
+  .siRating > button {
+    background-color: yellow;
+    border: black;
+    border-radius: 1px;
+    font-size: 5px;
+    padding: 1px;
+  }
+  .siPrice {
+    font-size: 5px;
+  }
+  .siTaxOp {
+    font-size: 5px;
+  }
+  .siCheckButton {
+    border: none;
+    background-color: #00a703;
+    color: white;
+    padding: 3px;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 8px;
+  }
+}

@@ -8,7 +8,11 @@ import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+
 function List() {
+  const [showList, setShowList] = useState(false);
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
   const [date, setDate] = useState(location.state.date);
@@ -21,13 +25,24 @@ function List() {
     setOpenDate((preValue) => !preValue);
   };
 
+  const showListSchedule = () => {
+    setShowList((preValue) => !preValue);
+  };
+
+  const scheduleClasses = showList ? "listSearch show" : "listSearch";
+
   return (
     <>
       <Navbar />
       <Header type="list" />
+      <FontAwesomeIcon
+        icon={faInfoCircle}
+        className="listSchedule"
+        onClick={showListSchedule}
+      />
       <div className="listContainer">
         <div className="listWrapper">
-          <div className="listSearch">
+          <div className={scheduleClasses}>
             <h1 className="lsTitle">Search</h1>
             <div className="lsItem">
               <label>Destination</label>
